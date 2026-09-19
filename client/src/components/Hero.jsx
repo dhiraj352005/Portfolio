@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0c1527] border border-cyan-500/30 text-xs font-medium text-cyan-400 mb-6 shadow-sm shadow-cyan-950">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
             <span className="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
-            Available for SDE Roles & Internships
+            Open to Roles & Internships
           </div>
 
           {/* Heading */}
