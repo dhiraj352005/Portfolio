@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, ExternalLink, Code2, Terminal, Send } from 'lucide-react';
+import { ArrowDown, ExternalLink, Code2, Send } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { byPrefixAndName } from './fontAwesomeIcons';
 import { portfolioData } from '../data/portfolioData';
@@ -176,12 +176,12 @@ export default function Hero() {
 
               {/* Floating Badge: SDE Intern */}
               <div className="absolute bottom-3 left-3 right-3 bg-[#0c1527]/90 backdrop-blur-md border border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-center gap-3 shadow-lg">
-                <div className="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                  <Terminal className="w-4 h-4" />
+                <div className="w-10 h-10 flex items-center justify-center bg-gray-800/80 border border-slate-700/60 rounded-lg shrink-0 p-1">
+                  <img src="/zensar-logo.png" alt="Zensar Logo" className="w-7 h-7 object-contain rounded" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-white">Zensar Tech</div>
-                  <div className="text-[10px] text-cyan-300">SDE Intern</div>
+                  <h4 className="text-white font-bold text-xs sm:text-sm">Zensar Technologies Pune</h4>
+                  <p className="text-cyan-400 text-xs">SDE Intern</p>
                 </div>
               </div>
             </div>
