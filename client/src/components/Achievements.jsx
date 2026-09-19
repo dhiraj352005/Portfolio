@@ -8,6 +8,15 @@ export default function Achievements() {
   const { achievements } = portfolioData;
 
   const getIcon = (item) => {
+    if (item.imageIcon) {
+      return (
+        <img
+          src={item.imageIcon}
+          alt={`${item.title} logo`}
+          className="w-6 h-6 object-contain"
+        />
+      );
+    }
     if (item.id === 'leetcode' || item.title?.toLowerCase().includes('leetcode')) {
       return <FontAwesomeIcon icon={faLeetcode} className="w-5 h-5 text-amber-400" />;
     }
@@ -86,7 +95,15 @@ export default function Achievements() {
                   {/* Badge & Icon Header */}
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-11 h-11 rounded-xl bg-slate-900/90 border border-slate-800 group-hover:border-cyan-500/30 flex items-center justify-center shadow-md">
-                      {getIcon(item)}
+                      {item.imageIcon ? (
+                        <img
+                          src={item.imageIcon}
+                          alt={`${item.title} logo`}
+                          className="w-6 h-6 object-contain"
+                        />
+                      ) : (
+                        getIcon(item)
+                      )}
                     </div>
                     <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 bg-cyan-950/70 border border-cyan-500/30 px-2.5 py-1 rounded-full">
                       {item.badge}
