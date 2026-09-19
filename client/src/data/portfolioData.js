@@ -34,8 +34,8 @@ export const portfolioData = {
         highlights: ["Zensar Technologies", "optimize REST API latency by 15%", "30% reduction in production defects"],
       },
       {
-        text: "Beyond full-stack development, I am an active competitive programmer with 778 algorithmic problems solved on LeetCode (Peak Contest Rating: 1616) and 5-Star badges on HackerRank. I enjoy competing in national-level hackathons like Smart India Hackathon and CodeForChange.",
-        highlights: ["778 algorithmic problems solved", "Peak Contest Rating: 1616", "5-Star badges on HackerRank", "Smart India Hackathon and CodeForChange"],
+        text: "Beyond full-stack development, I am an active competitive programmer with 800+ algorithmic problems solved on LeetCode (Peak Contest Rating: 1616) and 5-Star badges on HackerRank. I enjoy competing in national-level hackathons like Smart India Hackathon and CodeForChange.",
+        highlights: ["800+ algorithmic problems solved", "Peak Contest Rating: 1616", "5-Star badges on HackerRank", "Smart India Hackathon and CodeForChange"],
       },
     ],
     highlightCards: [
@@ -57,7 +57,7 @@ export const portfolioData = {
         id: "algo",
         title: "Competitive Programmer",
         icon: "Terminal",
-        description: "778 LeetCode problems solved with 1616 peak contest rating, top tier algorithmic thinking, and 5-star HackerRank status.",
+        description: "800+ LeetCode problems solved with 1616 peak contest rating, top tier algorithmic thinking, and 5-star HackerRank status.",
         badge: "DSA & Problem Solving",
       },
       {
@@ -210,10 +210,10 @@ export const portfolioData = {
       id: "leetcode",
       title: "LeetCode Problem Solver",
       badge: "COMPETITIVE",
-      description: "Solved 778 Data Structures and Algorithms problems (267 Easy, 386 Medium, 125 Hard). Achieved a peak contest rating of 1616 and earned 27 badges, including the 500 Days Badge.",
+      description: "Solved 800+ Data Structures and Algorithms problems (267 Easy, 386 Medium, 125 Hard). Achieved a peak contest rating of 1616 and earned 27 badges, including the 500 Days Badge.",
       stat: "1616 Peak",
       metric: "1616 Peak",
-      subMetric: "778 Problems (27 Badges)",
+      subMetric: "800+ Problems (27 Badges)",
       icon: "fa-code",
       color: "from-amber-400 to-orange-500",
       Image: "/Leet.png",
@@ -237,7 +237,7 @@ export const portfolioData = {
     },
     {
       id: "codeforchange",
-      title: "CodeForChange Hackathon",
+      title: "CodeForChange Hackathon Mastercard",
       badge: "HACKATHON",
       description: "Awarded 2nd Runner-up in Mastercard's nationwide CodeForChange Hackathon among 1,200+ competing developers.",
       stat: "2nd Runner-up",

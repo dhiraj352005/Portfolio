@@ -54,7 +54,7 @@ export default function About() {
           <p>
             Outside of enterprise engineering, I am a dedicated{' '}
             <span className="text-amber-300 font-semibold">competitive programmer</span> with{' '}
-            <span className="text-cyan-300 font-semibold">778+ solved problems on LeetCode</span> (Peak Rating:{' '}
+            <span className="text-cyan-300 font-semibold">800+ solved problems on LeetCode</span> (Peak Rating:{' '}
             <span className="text-emerald-400 font-semibold">1616</span>) and{' '}
             <span className="text-amber-300 font-semibold">5-Star recognition</span> on HackerRank. I find joy in pushing boundaries—whether
             optimizing algorithmic runtimes or competing at national hackathons like{' '}
