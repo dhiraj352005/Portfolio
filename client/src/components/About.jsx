@@ -39,7 +39,7 @@ export default function About() {
             <span className="text-emerald-600 dark:text-emerald-400 font-semibold">passionate full-stack developer</span>, lifelong learner,
             and systems engineer who thrives at the intersection of robust logic and seamless user experience. Currently
             pursuing my B.Tech in IT at{' '}
-            <span className="text-cyan-700 dark:text-cyan-300 font-semibold">PCCOE Pune (GPA: 8.45)</span>, I am dedicated to crafting{' '}
+            <span className="text-cyan-700 dark:text-cyan-300 font-semibold">Pimpri Chinchwad College Of Engineering Pune (GPA: 8.45)</span>, I am dedicated to crafting{' '}
             <span className="text-sky-700 dark:text-sky-400 font-semibold">scalable, cloud-native web applications</span> and high-throughput architectures.
           </p>
 

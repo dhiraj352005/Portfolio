@@ -26,8 +26,8 @@ export const portfolioData = {
   about: {
     introParagraphs: [
       {
-        text: "I am an aspiring full-stack developer, software engineer, and creative problem solver who thrives at the intersection of robust backend logic and elegant user experiences. Currently pursuing my B.Tech in IT at PCCOE Pune (GPA: 8.45), I have a passion for architecting scalable, cloud-native web applications and performance-critical systems.",
-        highlights: ["full-stack developer", "PCCOE Pune (GPA: 8.45)", "scalable, cloud-native web applications"],
+        text: "I am an aspiring full-stack developer, software engineer, and creative problem solver who thrives at the intersection of robust backend logic and elegant user experiences. Currently pursuing my B.Tech in IT at Pimpri Chinchwad College Of Engineering Pune (GPA: 8.45), I have a passion for architecting scalable, cloud-native web applications and performance-critical systems.",
+        highlights: ["full-stack developer", "Pimpri Chinchwad College Of Engineering Pune (GPA: 8.45)", "scalable, cloud-native web applications"],
       },
       {
         text: "During my SDE Internship at Zensar Technologies, I collaborated with cross-functional teams to engineer high-throughput cloud solutions, optimize REST API latency by 15%, and achieve a 30% reduction in production defects through disciplined testing and CI/CD pipelines.",
