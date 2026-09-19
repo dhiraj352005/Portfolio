@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,6 +12,18 @@ import Footer from './components/Footer';
 import FloatingChat from './components/FloatingChat';
 
 export default function App() {
+  useEffect(() => {
+    document.title = "Dhiraj Raut | Portfolio";
+
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    link.href = '/favicon.png';
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#060b17] dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden font-sans transition-colors duration-300">
       {/* Subtle Global Ambient Glow Accents */}
