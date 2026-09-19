@@ -25,13 +25,13 @@ export default function Projects() {
 
       {/* Header */}
       <div className="flex flex-col items-center text-center mb-14">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-xs font-semibold text-cyan-400 mb-3 tracking-wide">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-50 dark:bg-cyan-950/40 border border-cyan-500/30 text-xs font-semibold text-cyan-700 dark:text-cyan-400 mb-3 tracking-wide">
           My Work
         </div>
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Recent <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Projects</span>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          Recent <span className="bg-gradient-to-r from-cyan-500 to-blue-600 dark:from-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">Projects</span>
         </h2>
-        <p className="mt-3 text-sm sm:text-base text-slate-400 max-w-xl">
+        <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-xl">
           Explore a selection of my development work demonstrating technical skills, scalable design, and creative problem-solving.
         </p>
         <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3 shadow-sm shadow-cyan-400/50"></div>
@@ -39,7 +39,7 @@ export default function Projects() {
 
       {/* Filter Tabs (Screenshot 4 style category pills) */}
       <div className="flex justify-center mb-12">
-        <div className="inline-flex items-center p-1.5 rounded-2xl bg-[#0c1527]/90 border border-slate-800/90 shadow-xl backdrop-blur-md gap-1">
+        <div className="inline-flex items-center p-1.5 rounded-2xl bg-white/90 dark:bg-[#0c1527]/90 border border-slate-200 dark:border-slate-800/90 shadow-md backdrop-blur-md gap-1">
           {categories.map((cat) => {
             const Icon = cat.icon;
             const isActive = selectedCategory === cat.id;
@@ -49,11 +49,11 @@ export default function Projects() {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
                   isActive
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
+                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white dark:text-slate-950 font-bold shadow-md shadow-cyan-500/20'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800/50'
                 }`}
               >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-slate-950' : 'text-slate-400'}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white dark:text-slate-950' : 'text-slate-500 dark:text-slate-400'}`} />
                 {cat.label}
               </button>
             );
@@ -74,7 +74,7 @@ export default function Projects() {
           return (
             <div
               key={project.id || project.title || index}
-              className="group bg-[#0c1527]/70 hover:bg-[#0c1527]/90 border border-slate-800/90 hover:border-cyan-500/40 backdrop-blur-md rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-cyan-500/10 flex flex-col justify-between"
+              className="group bg-white dark:bg-[#0c1527]/70 hover:bg-slate-50 dark:hover:bg-[#0c1527]/90 border border-slate-200 dark:border-slate-800/90 hover:border-cyan-500/40 backdrop-blur-md rounded-2xl overflow-hidden transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-xl dark:hover:shadow-cyan-500/10 flex flex-col justify-between"
             >
               <div>
                 {/* Project Image Banner */}
@@ -84,23 +84,23 @@ export default function Projects() {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0c1527] via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/95 dark:from-[#0c1527] via-transparent to-transparent"></div>
                   
                   {/* Category badge */}
-                  <span className="absolute top-3 right-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-[#0c1527]/80 backdrop-blur-md border border-cyan-500/30 text-cyan-300">
+                  <span className="absolute top-3 right-3 text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/90 dark:bg-[#0c1527]/80 backdrop-blur-md border border-slate-200 dark:border-cyan-500/30 text-cyan-700 dark:text-cyan-300 shadow-sm">
                     {projectCategory}
                   </span>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-1">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-300 transition-colors mb-1">
                     {project.title}
                   </h3>
-                  <p className="text-xs text-cyan-400/90 font-medium mb-3">
+                  <p className="text-xs text-cyan-700 dark:text-cyan-400/90 font-medium mb-3">
                     {projectSubtitle}
                   </p>
-                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed line-clamp-3 mb-5">
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-3 mb-5">
                     {project.description}
                   </p>
 
@@ -109,7 +109,7 @@ export default function Projects() {
                     {projectTags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="text-[11px] font-medium px-2.5 py-0.8 rounded-md bg-slate-900 border border-slate-800 text-slate-300 group-hover:border-cyan-500/20"
+                        className="text-[11px] font-medium px-2.5 py-0.8 rounded-md bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 group-hover:border-cyan-500/30"
                       >
                         {tag}
                       </span>
@@ -119,15 +119,15 @@ export default function Projects() {
               </div>
 
               {/* Card Footer Links */}
-              <div className="p-6 pt-0 flex items-center justify-between border-t border-slate-800/60 mt-4">
+              <div className="p-6 pt-0 flex items-center justify-between border-t border-slate-200 dark:border-slate-800/60 mt-4">
                 {githubLink ? (
                   <a
                     href={githubLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center text-xs font-semibold text-slate-300 hover:text-cyan-300 transition-colors"
+                    className="flex items-center text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors"
                   >
-                    <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="mr-2 text-lg" />
+                    <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="mr-2 text-lg text-slate-700 dark:text-slate-400" />
                     Code Repository
                   </a>
                 ) : <span />}
@@ -136,7 +136,7 @@ export default function Projects() {
                     href={liveLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     Live Preview
@@ -154,9 +154,9 @@ export default function Projects() {
           href={portfolioData.personal.socials.github}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-full bg-[#0c1527] hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 text-slate-200 hover:text-white text-xs sm:text-sm font-semibold transition-all shadow-lg hover:scale-105"
+          className="inline-flex items-center px-6 py-3 rounded-full bg-white dark:bg-[#0c1527] hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 text-slate-800 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-white text-xs sm:text-sm font-semibold transition-all shadow-md hover:scale-105"
         >
-          <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="mr-2 text-lg text-cyan-400" />
+          <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="mr-2 text-lg text-cyan-500 dark:text-cyan-400" />
           View More on GitHub
         </a>
       </div>

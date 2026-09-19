@@ -22,38 +22,38 @@ export default function Hero() {
         {/* Left Column: Headline, Bio & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0c1527] border border-cyan-500/30 text-xs font-medium text-cyan-400 mb-6 shadow-sm shadow-cyan-950">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span className="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-[#0c1527] border border-cyan-500/30 text-xs font-medium text-cyan-700 dark:text-cyan-400 mb-6 shadow-sm shadow-cyan-950/10 dark:shadow-cyan-950">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <span className="w-2 h-2 rounded-full bg-emerald-500 -ml-4"></span>
             Open to Roles & Internships
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 dark:from-cyan-400 dark:via-sky-300 dark:to-blue-500 bg-clip-text text-transparent">
               {personal.name}
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-5 text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-xl">
+          <p className="mt-5 text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-xl">
             {personal.tagline}
           </p>
 
           {/* Key Metrics / Highlights strip */}
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-400">
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 border border-slate-800">
-              <span className="text-cyan-400 font-bold">GPA: 8.45</span>
-              <span>PCCOE Pune</span>
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span className="text-cyan-600 dark:text-cyan-400 font-bold">GPA: 8.45</span>
+              <span className="text-slate-700 dark:text-slate-300">PCCOE Pune</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 border border-slate-800">
-              <span className="text-amber-400 font-bold">1616</span>
-              <span>LeetCode Rating</span>
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span className="text-amber-500 dark:text-amber-400 font-bold">1616</span>
+              <span className="text-slate-700 dark:text-slate-300">LeetCode Rating</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 border border-slate-800">
-              <span className="text-emerald-400 font-bold">SDE Intern</span>
-              <span>Zensar Technologies, Pune</span>
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold">SDE Intern</span>
+              <span className="text-slate-700 dark:text-slate-300">Zensar Technologies, Pune</span>
             </div>
           </div>
 
@@ -69,10 +69,10 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="px-7 py-3.5 rounded-full bg-[#0c1527]/80 hover:bg-slate-800/80 border border-slate-700/80 hover:border-cyan-500/50 text-slate-200 font-semibold text-sm transition-all shadow-md hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
+              className="px-7 py-3.5 rounded-full bg-white dark:bg-[#0c1527]/80 hover:bg-slate-50 dark:hover:bg-slate-800/80 border border-slate-300 dark:border-slate-700/80 hover:border-cyan-500/50 text-slate-800 dark:text-slate-200 font-semibold text-sm transition-all shadow-sm hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
             >
               Contact Me
-              <Send className="w-4 h-4 text-cyan-400" />
+              <Send className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
             </a>
           </div>
 
@@ -83,63 +83,63 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
               title="GitHub Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-cyan-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-cyan-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="GitHub Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="text-2xl hover:text-cyan-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="text-2xl hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors" />
             </a>
             <a
               href={personal.socials.linkedin}
               target="_blank"
               rel="noreferrer"
               title="LinkedIn Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-blue-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-blue-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="LinkedIn Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['linkedin']} className="text-2xl hover:text-cyan-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['linkedin']} className="text-2xl hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors" />
             </a>
             <a
               href={personal.socials.leetcode}
               target="_blank"
               rel="noreferrer"
               title="LeetCode Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-amber-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-amber-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="LeetCode Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['leetcode']} className="text-xl hover:text-amber-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['leetcode']} className="text-xl hover:text-amber-500 dark:hover:text-amber-400 transition-colors" />
             </a>
             <a
               href={personal.socials.hackerrank}
               target="_blank"
               rel="noreferrer"
               title="HackerRank Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-emerald-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-emerald-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="HackerRank Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['hackerrank']} className="text-xl hover:text-emerald-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['hackerrank']} className="text-xl hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors" />
             </a>
             <a
               href={personal.socials.twitter}
               target="_blank"
               rel="noreferrer"
               title="X / Twitter Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-sky-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-sky-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="Twitter / X Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['square-x-twitter']} className="text-2xl hover:text-cyan-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['square-x-twitter']} className="text-2xl hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors" />
             </a>
             <a
               href={personal.socials.reddit}
               target="_blank"
               rel="noreferrer"
               title="Reddit Profile"
-              className="w-10 h-10 rounded-full bg-[#0c1527] border border-slate-800 hover:border-orange-400/50 flex items-center justify-center text-slate-400 hover:scale-110 transition-all shadow-md group"
+              className="w-10 h-10 rounded-full bg-white dark:bg-[#0c1527] border border-slate-200 dark:border-slate-800 hover:border-orange-400/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:scale-110 transition-all shadow-sm group"
               aria-label="Reddit Profile"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.fab['square-reddit']} className="text-2xl hover:text-cyan-400 transition-colors" />
+              <FontAwesomeIcon icon={byPrefixAndName.fab['square-reddit']} className="text-2xl hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors" />
             </a>
-            <span className="text-xs text-slate-400 ml-1 border-l border-slate-800 pl-3 hidden sm:inline-flex items-center">
-              <FontAwesomeIcon icon={byPrefixAndName.fass['location-dot']} className="mr-2 text-cyan-400" />
+            <span className="text-xs text-slate-500 dark:text-slate-400 ml-1 border-l border-slate-200 dark:border-slate-800 pl-3 hidden sm:inline-flex items-center">
+              <FontAwesomeIcon icon={byPrefixAndName.fass['location-dot']} className="mr-2 text-cyan-500 dark:text-cyan-400" />
               Pune, India
             </span>
           </div>
@@ -151,8 +151,8 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-blue-500/10 to-transparent rounded-3xl blur-2xl -z-10 scale-95"></div>
 
           {/* Framed Container */}
-          <div className="relative w-72 sm:w-80 md:w-96 rounded-3xl p-2.5 bg-gradient-to-b from-cyan-500/30 via-slate-800/40 to-slate-900/60 backdrop-blur-xl border border-cyan-500/30 shadow-2xl shadow-cyan-950/50 group transition-all duration-300 hover:border-cyan-400/60">
-            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-[#0a1020] flex items-center justify-center border border-slate-800">
+          <div className="relative w-72 sm:w-80 md:w-96 rounded-3xl p-2.5 bg-gradient-to-b from-cyan-500/20 via-slate-200/50 to-slate-100/70 dark:from-cyan-500/30 dark:via-slate-800/40 dark:to-slate-900/60 backdrop-blur-xl border border-cyan-500/30 shadow-2xl shadow-slate-300/40 dark:shadow-cyan-950/50 group transition-all duration-300 hover:border-cyan-400/60">
+            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-[#0a1020] flex items-center justify-center border border-slate-200 dark:border-slate-800">
               {!imgError ? (
                 <img
                   src={profileImg}
@@ -162,26 +162,26 @@ export default function Hero() {
                 />
               ) : (
                 /* Fallback stylized developer avatar card */
-                <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-slate-900 to-[#0c1527]">
+                <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-slate-100 to-white dark:from-slate-900 dark:to-[#0c1527]">
                   <div className="w-24 h-24 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-blue-600/30 border border-cyan-500/40 flex items-center justify-center mb-4 shadow-lg shadow-cyan-500/10">
-                    <Code2 className="w-12 h-12 text-cyan-400" />
+                    <Code2 className="w-12 h-12 text-cyan-500 dark:text-cyan-400" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-1">{personal.name}</h3>
-                  <p className="text-xs text-cyan-300 font-medium mb-3">SDE & Full Stack Dev</p>
-                  <p className="text-[11px] text-slate-400 max-w-[200px]">
-                    Drop your headshot at <span className="text-cyan-400 font-mono">client/src/assets/profile.png</span>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">{personal.name}</h3>
+                  <p className="text-xs text-cyan-600 dark:text-cyan-300 font-medium mb-3">SDE & Full Stack Dev</p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 max-w-[200px]">
+                    Drop your headshot at <span className="text-cyan-600 dark:text-cyan-400 font-mono">client/src/assets/profile.png</span>
                   </p>
                 </div>
               )}
 
               {/* Floating Badge: SDE Intern */}
-              <div className="absolute bottom-3 left-3 right-3 bg-[#0c1527]/90 backdrop-blur-md border border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-center gap-3 shadow-lg">
-                <div className="w-10 h-10 flex items-center justify-center bg-gray-800/80 border border-slate-700/60 rounded-lg shrink-0 p-1">
+              <div className="absolute bottom-3 left-3 right-3 bg-white/95 dark:bg-[#0c1527]/90 backdrop-blur-md border border-slate-200 dark:border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-center gap-3 shadow-lg">
+                <div className="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-gray-800/80 border border-slate-200 dark:border-slate-700/60 rounded-lg shrink-0 p-1">
                   <img src="/zensar-logo.png" alt="Zensar Logo" className="w-7 h-7 object-contain rounded" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-xs sm:text-sm">Zensar Technologies Pune</h4>
-                  <p className="text-cyan-400 text-xs">SDE Intern</p>
+                  <h4 className="text-slate-900 dark:text-white font-bold text-xs sm:text-sm">Zensar Technologies Pune</h4>
+                  <p className="text-cyan-600 dark:text-cyan-400 text-xs font-semibold">SDE Intern</p>
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function Hero() {
         <a
           href="#about"
           aria-label="Scroll to About Me"
-          className="w-11 h-11 rounded-full bg-[#0c1527]/80 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-all hover:scale-110 shadow-lg shadow-cyan-950/20 animate-bounce"
+          className="w-11 h-11 rounded-full bg-white dark:bg-[#0c1527]/80 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-all hover:scale-110 shadow-md animate-bounce"
         >
           <ArrowDown className="w-4 h-4" />
         </a>

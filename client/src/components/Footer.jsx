@@ -10,21 +10,21 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-slate-800/80 bg-[#060b17] py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="relative border-t border-slate-200 dark:border-slate-800/80 bg-slate-100/70 dark:bg-[#060b17] py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Left: Brand & Copyright */}
         <div className="text-center sm:text-left">
-          <div className="text-lg font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-1">
+          <div className="text-lg font-extrabold bg-gradient-to-r from-cyan-500 to-blue-600 dark:from-cyan-400 dark:to-blue-500 bg-clip-text text-transparent mb-1">
             Dhiraj Raut
           </div>
-          <p className="text-xs text-slate-400 flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+          <p className="text-xs text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
             <span>© 2026 Dhiraj Raut. All rights reserved. Made with <Heart className="w-3.5 h-3.5 text-rose-500 inline-block fill-rose-500" /></span>
-            <span className="hidden sm:inline text-slate-600">•</span>
+            <span className="hidden sm:inline text-slate-300 dark:text-slate-600">•</span>
             <a
               href={`mailto:${portfolioData.personal.email}`}
-              className="inline-flex items-center text-slate-400 hover:text-cyan-400 transition-colors ml-1"
+              className="inline-flex items-center text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors ml-1"
             >
-              <FontAwesomeIcon icon={byPrefixAndName.far['envelope']} className="mr-1.5 text-cyan-400" />
+              <FontAwesomeIcon icon={byPrefixAndName.far['envelope']} className="mr-1.5 text-cyan-600 dark:text-cyan-400" />
               {portfolioData.personal.email}
             </a>
           </p>
@@ -37,7 +37,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="GitHub"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-500/40 transition-all shadow-sm"
             aria-label="GitHub"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['square-github']} className="text-lg" />
@@ -47,7 +47,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="LinkedIn"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition-all shadow-sm"
             aria-label="LinkedIn"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['linkedin']} className="text-lg" />
@@ -57,7 +57,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="LeetCode"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:border-amber-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 hover:border-amber-500/40 transition-all shadow-sm"
             aria-label="LeetCode"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['leetcode']} className="text-base" />
@@ -67,7 +67,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="HackerRank"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-500/40 transition-all shadow-sm"
             aria-label="HackerRank"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['hackerrank']} className="text-base" />
@@ -77,7 +77,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="Twitter / X"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-500/40 transition-all shadow-sm"
             aria-label="Twitter / X"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['square-x-twitter']} className="text-lg" />
@@ -87,7 +87,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             title="Reddit"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-orange-400 hover:border-orange-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 hover:border-orange-500/40 transition-all shadow-sm"
             aria-label="Reddit"
           >
             <FontAwesomeIcon icon={byPrefixAndName.fab['square-reddit']} className="text-lg" />
@@ -95,14 +95,14 @@ export default function Footer() {
           <a
             href={`mailto:${portfolioData.personal.email}`}
             title="Email"
-            className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all"
+            className="w-9 h-9 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-500/40 transition-all shadow-sm"
             aria-label="Email"
           >
             <FontAwesomeIcon icon={byPrefixAndName.far['envelope']} className="text-base" />
           </a>
           <button
             onClick={scrollToTop}
-            className="w-9 h-9 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 hover:bg-cyan-500/20 hover:scale-110 transition-all"
+            className="w-9 h-9 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 hover:bg-cyan-500/20 hover:scale-110 transition-all shadow-sm"
             aria-label="Back to Top"
           >
             <ArrowUp className="w-4 h-4" />

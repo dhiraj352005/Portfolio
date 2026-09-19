@@ -13,10 +13,10 @@ import FloatingChat from './components/FloatingChat';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#060b17] text-slate-100 selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#060b17] dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden font-sans transition-colors duration-300">
       {/* Subtle Global Ambient Glow Accents */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gradient-to-b from-cyan-500/10 via-blue-600/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
-      <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/5 blur-3xl pointer-events-none -z-10"></div>
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gradient-to-b from-cyan-500/15 via-sky-400/5 to-transparent dark:from-cyan-500/10 dark:via-blue-600/5 blur-3xl pointer-events-none -z-10"></div>
+      <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-sky-500/10 dark:bg-blue-500/5 blur-3xl pointer-events-none -z-10"></div>
 
       {/* Navigation */}
       <Navbar />
