@@ -1,0 +1,15 @@
+{
+  "name": "dhiraj-raut-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack MERN portfolio for Dhiraj Raut",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
