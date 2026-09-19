@@ -175,19 +175,13 @@ export default function Hero() {
               )}
 
               {/* Floating Badge: SDE Intern */}
-              <div className="absolute bottom-3 left-3 right-3 bg-[#0c1527]/90 backdrop-blur-md border border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-between shadow-lg">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                    <Terminal className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="text-xs font-bold text-white">Zensar Tech</div>
-                    <div className="text-[10px] text-cyan-300">SDE Intern</div>
-                  </div>
+              <div className="absolute bottom-3 left-3 right-3 bg-[#0c1527]/90 backdrop-blur-md border border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-center gap-3 shadow-lg">
+                <div className="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                  <Terminal className="w-4 h-4" />
                 </div>
-                <div className="text-right">
-                  <div className="text-xs font-bold text-emerald-400">GPA 8.45</div>
-                  <div className="text-[10px] text-slate-400">PCCOE Pune</div>
+                <div>
+                  <div className="text-xs font-bold text-white">Zensar Tech</div>
+                  <div className="text-[10px] text-cyan-300">SDE Intern</div>
                 </div>
               </div>
             </div>
