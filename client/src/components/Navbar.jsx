@@ -6,25 +6,23 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        return savedTheme === 'dark';
-      }
-      return !window.matchMedia('(prefers-color-scheme: light)').matches;
-    }
-    return true;
+    // Check local storage first, but default to true (dark mode) if nothing is found
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'light' ? false : true;
   });
 
   useEffect(() => {
+    const root = document.documentElement;
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+      root.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      root.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
+
+  const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
   const navLinks = [
     { name: 'Home', href: '#home', id: 'home' },
@@ -103,7 +101,7 @@ export default function Navbar() {
         {/* Right Action Icons & Mobile Hamburger */}
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
+            onClick={toggleTheme}
             aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
             title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
             className="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700/60 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-500/40 transition-all shadow-sm"
