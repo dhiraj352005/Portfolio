@@ -89,6 +89,22 @@ export default function Certifications() {
     };
   };
 
+  const renderCertIcon = (cert, platBadge) => {
+    if (React.isValidElement(cert.icon)) {
+      return cert.icon;
+    }
+    if (cert.icon && typeof cert.icon === 'object' && cert.icon.prefix && cert.icon.name) {
+      const iconDef = byPrefixAndName[cert.icon.prefix]?.[cert.icon.name];
+      if (iconDef) {
+        return <FontAwesomeIcon icon={iconDef} className="text-cyan-400 text-base sm:text-lg group-hover:scale-110 transition-transform" />;
+      }
+    }
+    if (typeof cert.icon === 'string') {
+      return <i className={`${cert.icon} text-cyan-400 text-lg`}></i>;
+    }
+    return platBadge?.icon || <FontAwesomeIcon icon={byPrefixAndName.fas['graduation-cap']} className="text-cyan-400 text-lg" />;
+  };
+
   return (
     <section id="certificates" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       {/* Background Subtle Ambient Glow */}
@@ -201,9 +217,9 @@ export default function Certifications() {
               {/* Bottom Half: Details & Link */}
               <div className="p-5 flex flex-col flex-1">
                 <div className="flex items-start gap-3 mb-2">
-                  {/* Platform Brand Icon */}
-                  <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 mt-0.5 group-hover:border-cyan-500/30 transition-colors">
-                    {platBadge.icon}
+                  {/* Certification FontAwesome Icon */}
+                  <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 mt-0.5 group-hover:border-cyan-500/40 transition-colors shadow-sm text-cyan-400">
+                    {renderCertIcon(cert, platBadge)}
                   </div>
 
                   <div>

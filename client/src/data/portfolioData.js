@@ -299,6 +299,7 @@ export const portfolioData = {
       Link: "https://coursera.org/share/96d707d9c55a6a2a46fafbe4c58e5bee",
       Image: "/coursera-dsa.png",
       image: "/coursera-dsa.png",
+      icon: { prefix: "fas", name: "code" },
       badgeColor: "from-emerald-500/20 to-cyan-500/20 border-emerald-500/30 text-emerald-300",
     },
     {
@@ -313,6 +314,7 @@ export const portfolioData = {
       Link: "https://coursera.org/share/bfdc9029b8474d8892c263b5af0da948",
       Image: "/coursera-java-oracle.png",
       image: "/coursera-java-oracle.png",
+      icon: { prefix: "fab", name: "java" },
       badgeColor: "from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-300",
     },
     {
@@ -327,6 +329,7 @@ export const portfolioData = {
       Link: "https://coursera.org/share/e233411e2f3c30aed54bfd8c8124a330",
       Image: "/coursera-ml.png",
       image: "/coursera-ml.png",
+      icon: { prefix: "fal", name: "brain-circuit" },
       badgeColor: "from-purple-500/20 to-blue-500/20 border-purple-500/30 text-purple-300",
     },
     {
@@ -341,6 +344,7 @@ export const portfolioData = {
       Link: "https://coursera.org/share/1ebe3606903ddab3d162e7d7c56e09eb",
       Image: "/coursera-cybersecurity.png",
       image: "/coursera-cybersecurity.png",
+      icon: { prefix: "fasds", name: "binary-lock" },
       badgeColor: "from-blue-500/20 to-cyan-500/20 border-cyan-500/30 text-cyan-300",
     },
     {
@@ -355,6 +359,7 @@ export const portfolioData = {
       Link: "https://coursera.org/share/80f7c2210e1f67f3cdb3d913d9f69cdb",
       Image: "/coursera-system-design.png",
       image: "/coursera-system-design.png",
+      icon: { prefix: "fas", name: "gear-code" },
       badgeColor: "from-cyan-500/20 to-teal-500/20 border-teal-500/30 text-teal-300",
     },
 
@@ -371,6 +376,7 @@ export const portfolioData = {
       Link: "https://www.credly.com/badges/0c7d395f-7b19-47e2-a339-beb354016368/public_url",
       Image: "/ibm-genai.png",
       image: "/ibm-genai.png",
+      icon: { prefix: "fass", name: "robot" },
       badgeColor: "from-sky-500/20 to-blue-600/20 border-sky-500/30 text-sky-300",
     },
 
@@ -387,6 +393,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1emTksnfmk8-kbxAFIe5z5YtPC821mwGX/view?usp=sharing",
       Image: "/aws-cloud.png",
       image: "/aws-cloud.png",
+      icon: { prefix: "fab", name: "aws" },
       badgeColor: "from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-300",
     },
 
@@ -403,6 +410,7 @@ export const portfolioData = {
       Link: "https://www.hackerrank.com/certificates/bf4dd6d28ab8",
       Image: "/hr-js.png",
       image: "/hr-js.png",
+      icon: { prefix: "fab", name: "js" },
       badgeColor: "from-emerald-500/20 to-green-600/20 border-emerald-500/30 text-emerald-300",
     },
     {
@@ -417,6 +425,7 @@ export const portfolioData = {
       Link: "https://www.hackerrank.com/certificates/7e1db28b9b19",
       Image: "/hr-sql.png",
       image: "/hr-sql.png",
+      icon: { prefix: "faes", name: "database" },
       badgeColor: "from-emerald-500/20 to-green-600/20 border-emerald-500/30 text-emerald-300",
     },
     {
@@ -431,6 +440,7 @@ export const portfolioData = {
       Link: "https://www.hackerrank.com/certificates/7a7ad605c7b7",
       Image: "/hr-swe-intern.png",
       image: "/hr-swe-intern.png",
+      icon: { prefix: "fasds", name: "briefcase" },
       badgeColor: "from-emerald-500/20 to-green-600/20 border-emerald-500/30 text-emerald-300",
     },
 
@@ -447,6 +457,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1Jt_2dDrDWdek8S7ytYoJiGKCv3YXcjAD/view?usp=sharing",
       Image: "/simpli-testing.png",
       image: "/simpli-testing.png",
+      icon: { prefix: "fad", name: "vials" },
       badgeColor: "from-blue-600/20 to-cyan-600/20 border-blue-500/30 text-blue-300",
     },
     {
@@ -461,6 +472,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1xKRLnP2Kv5Q2UrhUenIyh0PzxufxZ7Gd/view?usp=sharing",
       Image: "/simpli-fullstack.png",
       image: "/simpli-fullstack.png",
+      icon: { prefix: "fass", name: "browser" },
       badgeColor: "from-blue-600/20 to-cyan-600/20 border-blue-500/30 text-blue-300",
     },
     {
@@ -475,6 +487,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1RwjNF5FeYF8i_5fQMPFAHSvL4o1i-Cag/view?usp=sharing",
       Image: "/simpli-devops.png",
       image: "/simpli-devops.png",
+      icon: { prefix: "fab", name: "docker" },
       badgeColor: "from-blue-600/20 to-cyan-600/20 border-blue-500/30 text-blue-300",
     },
     {
@@ -489,6 +502,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1bOUQkt-4-2o7FKYA5_RuQruuXszF5_-B/view?usp=sharing",
       Image: "/simpli-cpp.png",
       image: "/simpli-cpp.png",
+      icon: { prefix: "fas", name: "c" },
       badgeColor: "from-blue-600/20 to-cyan-600/20 border-blue-500/30 text-blue-300",
     },
 
@@ -505,6 +519,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1Gh3A93-mX5X0upeQc9XAtU0OQZE6iywk/view?usp=sharing",
       Image: "/forage-jpmorgan.png",
       image: "/forage-jpmorgan.png",
+      icon: { prefix: "fas", name: "j" },
       badgeColor: "from-purple-500/20 to-indigo-600/20 border-purple-500/30 text-purple-300",
     },
     {
@@ -519,6 +534,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/12Ldmcdt4iKry9WO7oeKels54jWmPD2EG/view?usp=sharing",
       Image: "/forage-goldman.png",
       image: "/forage-goldman.png",
+      icon: { prefix: "far", name: "g" },
       badgeColor: "from-purple-500/20 to-indigo-600/20 border-purple-500/30 text-purple-300",
     },
     {
@@ -533,6 +549,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/12Ldmcdt4iKry9WO7oeKels54jWmPD2EG/view?usp=sharing",
       Image: "/forage-aws.png",
       image: "/forage-aws.png",
+      icon: { prefix: "fab", name: "amazon" },
       badgeColor: "from-purple-500/20 to-indigo-600/20 border-purple-500/30 text-purple-300",
     },
     {
@@ -547,6 +564,7 @@ export const portfolioData = {
       Link: "https://drive.google.com/file/d/1cehf89r5S6FVVFkDTsmGBhODqumKOpub/view?usp=sharing",
       Image: "/forage-deloitte.png",
       image: "/forage-deloitte.png",
+      icon: { prefix: "fass", name: "d" },
       badgeColor: "from-purple-500/20 to-indigo-600/20 border-purple-500/30 text-purple-300",
     },
   ],

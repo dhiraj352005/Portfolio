@@ -14,7 +14,9 @@ import {
   faJava,
   faPython,
   faDocker,
-  faGitAlt
+  faGitAlt,
+  faAws,
+  faAmazon
 } from '@fortawesome/free-brands-svg-icons';
 
 import { 
@@ -42,7 +44,15 @@ import {
   faWifi,
   faSitemap,
   faGraduationCap,
-  faBriefcase
+  faBriefcase,
+  faLock,
+  faGears,
+  faVials,
+  faWindowMaximize,
+  faC,
+  faJ,
+  faG,
+  faD
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
@@ -85,9 +95,23 @@ export const byPrefixAndName = {
     'docker': faDocker,
     'git': faGitAlt,
     'git-alt': faGitAlt,
+    'aws': faAws,
+    'amazon': faAmazon,
+  },
+  fal: {
+    'brain-circuit': faBrain,
+    'brain': faBrain,
   },
   fass: {
     'location-dot': faLocationDot,
+    'robot': faRobot,
+    'browser': faWindowMaximize,
+    'd': faD,
+  },
+  fasds: {
+    'binary-lock': faLock,
+    'lock': faLock,
+    'briefcase': faBriefcase,
   },
   fas: {
     'diagram-project': faDiagramProject,
@@ -118,9 +142,20 @@ export const byPrefixAndName = {
     'sitemap': faSitemap,
     'graduation-cap': faGraduationCap,
     'briefcase': faBriefcase,
+    'gear-code': faGears,
+    'gears': faGears,
+    'c': faC,
+    'j': faJ,
+  },
+  faes: {
+    'database': faDatabase,
+  },
+  fad: {
+    'vials': faVials,
   },
   far: {
     'phone-arrow-right': faPhone,
     'envelope': farEnvelope,
+    'g': faG,
   },
 };
