@@ -293,7 +293,7 @@ export const portfolioData = {
       Title: "Data Structures & Algorithms",
       platform: "Coursera",
       Platform: "Coursera",
-      issuer: "Coursera",
+      issuer: "Amazon",
       year: "2024",
       url: "https://coursera.org/share/96d707d9c55a6a2a46fafbe4c58e5bee",
       Link: "https://coursera.org/share/96d707d9c55a6a2a46fafbe4c58e5bee",
@@ -308,7 +308,7 @@ export const portfolioData = {
       Title: "Java (Oracle)",
       platform: "Coursera",
       Platform: "Coursera",
-      issuer: "Oracle / Coursera",
+      issuer: "Oracle",
       year: "2024",
       url: "https://coursera.org/share/bfdc9029b8474d8892c263b5af0da948",
       Link: "https://coursera.org/share/bfdc9029b8474d8892c263b5af0da948",
@@ -400,8 +400,8 @@ export const portfolioData = {
     // HackerRank
     {
       id: "hr-js-intermediate",
-      title: "JavaScript (Intermediate)",
-      Title: "JavaScript (Intermediate)",
+      title: "JavaScript",
+      Title: "JavaScript",
       platform: "HackerRank",
       Platform: "HackerRank",
       issuer: "HackerRank",
@@ -415,8 +415,8 @@ export const portfolioData = {
     },
     {
       id: "hr-sql-advanced",
-      title: "SQL (Advanced)",
-      Title: "SQL (Advanced)",
+      title: "SQL",
+      Title: "SQL",
       platform: "HackerRank",
       Platform: "HackerRank",
       issuer: "HackerRank",
@@ -447,8 +447,8 @@ export const portfolioData = {
     // Simplilearn
     {
       id: "simpli-testing",
-      title: "Introduction to Software Testing",
-      Title: "Introduction to Software Testing",
+      title: "Software Testing",
+      Title: "Software Testing",
       platform: "Simplilearn",
       Platform: "Simplilearn",
       issuer: "Simplilearn",
@@ -462,8 +462,8 @@ export const portfolioData = {
     },
     {
       id: "simpli-fullstack",
-      title: "Free Full Stack Developer Course",
-      Title: "Free Full Stack Developer Course",
+      title: "Full Stack Developer",
+      Title: "Full Stack Developer",
       platform: "Simplilearn",
       Platform: "Simplilearn",
       issuer: "Simplilearn",
@@ -477,8 +477,8 @@ export const portfolioData = {
     },
     {
       id: "simpli-devops",
-      title: "DevOps 101: What is DevOps?",
-      Title: "DevOps 101: What is DevOps?",
+      title: "DevOps",
+      Title: "DevOps",
       platform: "Simplilearn",
       Platform: "Simplilearn",
       issuer: "Simplilearn",
@@ -492,8 +492,8 @@ export const portfolioData = {
     },
     {
       id: "simpli-cpp",
-      title: "Learn Advanced C++ Course Online",
-      Title: "Learn Advanced C++ Course Online",
+      title: "Advanced C++",
+      Title: "Advanced C++",
       platform: "Simplilearn",
       Platform: "Simplilearn",
       issuer: "Simplilearn",
