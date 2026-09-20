@@ -16,7 +16,8 @@ import {
   faDocker,
   faGitAlt,
   faAws,
-  faAmazon
+  faAmazon,
+  faGoogle
 } from '@fortawesome/free-brands-svg-icons';
 
 import { 
@@ -97,6 +98,7 @@ export const byPrefixAndName = {
     'git-alt': faGitAlt,
     'aws': faAws,
     'amazon': faAmazon,
+    'google': faGoogle,
   },
   fal: {
     'brain-circuit': faBrain,

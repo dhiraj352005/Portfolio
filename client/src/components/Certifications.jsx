@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Award, ExternalLink, ShieldCheck, FileCheck } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAmazon, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { byPrefixAndName } from './fontAwesomeIcons';
 import { portfolioData } from '../data/portfolioData';
 
@@ -92,6 +93,12 @@ export default function Certifications() {
   const renderCertIcon = (cert, platBadge) => {
     if (React.isValidElement(cert.icon)) {
       return cert.icon;
+    }
+    if (cert.icon?.name === 'amazon' || cert.icon === 'amazon' || cert.icon === faAmazon) {
+      return <FontAwesomeIcon icon={faAmazon} className="text-cyan-400 text-base sm:text-lg group-hover:scale-110 transition-transform" />;
+    }
+    if (cert.icon?.name === 'google' || cert.icon === 'google' || cert.icon === faGoogle) {
+      return <FontAwesomeIcon icon={faGoogle} className="text-cyan-400 text-base sm:text-lg group-hover:scale-110 transition-transform" />;
     }
     if (cert.icon && typeof cert.icon === 'object' && cert.icon.prefix && cert.icon.name) {
       const iconDef = byPrefixAndName[cert.icon.prefix]?.[cert.icon.name];
