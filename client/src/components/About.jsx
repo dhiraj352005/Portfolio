@@ -44,8 +44,8 @@ export default function About() {
           </p>
 
           <p>
-            During my SDE Internship at{' '}
-            <span className="text-cyan-700 dark:text-cyan-300 font-semibold">Zensar Technologies</span>, I engineered cloud services that delivered
+            As an{' '}
+            <span className="text-cyan-700 dark:text-cyan-300 font-semibold">Ex-SDE Intern at Zensar Technologies</span>, I engineered cloud services that delivered
             a <span className="text-emerald-600 dark:text-emerald-400 font-semibold">20% boost in team efficiency</span>, optimized enterprise REST API latency
             by <span className="text-cyan-700 dark:text-cyan-300 font-semibold">15%</span>, and drove a{' '}
             <span className="text-sky-700 dark:text-sky-400 font-semibold">30% reduction in production defects</span> through robust automated pipelines.

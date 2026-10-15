@@ -52,7 +52,7 @@ export default function Hero() {
               <span className="text-slate-700 dark:text-slate-300">LeetCode Rating</span>
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm">
-              <span className="text-emerald-600 dark:text-emerald-400 font-bold">SDE Intern</span>
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold">Ex-SDE Intern</span>
               <span className="text-slate-700 dark:text-slate-300">Zensar Technologies, Pune</span>
             </div>
           </div>
@@ -174,14 +174,14 @@ export default function Hero() {
                 </div>
               )}
 
-              {/* Floating Badge: SDE Intern */}
+              {/* Floating Badge: Ex-SDE Intern */}
               <div className="absolute bottom-3 left-3 right-3 bg-white/95 dark:bg-[#0c1527]/90 backdrop-blur-md border border-slate-200 dark:border-cyan-500/30 rounded-xl p-2.5 flex items-center justify-center gap-3 shadow-lg">
                 <div className="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-gray-800/80 border border-slate-200 dark:border-slate-700/60 rounded-lg shrink-0 p-1">
                   <img src="/zensar-logo.png" alt="Zensar Logo" className="w-7 h-7 object-contain rounded" />
                 </div>
                 <div>
                   <h4 className="text-slate-900 dark:text-white font-bold text-xs sm:text-sm">Zensar Technologies Pune</h4>
-                  <p className="text-cyan-600 dark:text-cyan-400 text-xs font-semibold">SDE Intern</p>
+                  <p className="text-cyan-600 dark:text-cyan-400 text-xs font-semibold">Ex-SDE Intern</p>
                 </div>
               </div>
             </div>

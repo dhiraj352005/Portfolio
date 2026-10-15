@@ -9,7 +9,7 @@ export default function Certifications() {
   const { certifications } = portfolioData;
   const [selectedPlatform, setSelectedPlatform] = useState('All');
 
-  const platforms = ['All', 'Coursera', 'IBM', 'HackerRank', 'Simplilearn', 'Forage', 'AWS'];
+  const platforms = ['All', 'Coursera', 'IBM', 'AWS', 'HackerRank'];
 
   const filteredCerts = certifications.filter((cert) => {
     const plat = cert.platform || cert.Platform;
